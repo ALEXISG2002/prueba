@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main id="ppal">
+        <header id="cabeza">
+            
+        </header>
+
+        <section id="cuerpo">
+            <form id="registrar" name="registrar" action="/guardarUsuarios" method="post" enctype="multipart/form-data" onsubmit="mensaje()">
+                
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" pattern="[A-Za-z\s*]{3,32}" maxlength="32" minlength="3" placeholder="Ej: Alexis / Juan Camilo" tabindex="2" required title="Solo letras">
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" pattern="[A-Za-z\s*]{3,32}" maxlength="32" minlength="3" placeholder="Ej: Franco / Garcia Guerrero" tabindex="3" required title="Solo letras">
+
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" maxlength="32" minlength="3" placeholder="Ej: jeronimo@hotmail.com" tabindex="3" required>
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" name="asunto" id="asunto" pattern="[A-Za-z\s*]{3,500}" maxlength="500" minlength="3" placeholder="Ej: Consulta sobre productos" tabindex="3" required title="Solo letras">
+
+                <label for="celular">Celular:</label>
+                <input type="tel" name="celular" id="celular" inputmode="tel" pattern="[0-9]{10}" maxlength="10" minlength="10" placeholder="Ej: 3157431695" tabindex="4" required>
+
+                <div id="boton">
+                    <button type="submit">Guardar</button>
+                </div>
+                <a href="/" id="cancelar">Cancelar</a>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

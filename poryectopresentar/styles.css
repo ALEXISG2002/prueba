@@ -1,0 +1,72 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('https://cdn.motor1.com/images/mgl/ojoEL0/s1/le-auto-che-stanno-per-dirci-addio.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+#ppal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+   
+}
+
+
+#cuerpo {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+}
+#registrar{
+    padding-right: 15px;
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#cancelar {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #555;
+}
+
+#cancelar:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'work', 'calibri';
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 100px;
+}
+    ul li {
+        position: relative;
+        z-index: 2;
+    }
+body {
+    font-family: 'work', 'calibri';
+    font-size: 30px;
+}
+html, body{
+    margin: 7;
+    padding: 0;
+}
+
+header#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00324D;
+}
+
+
+
+
+header a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0;
+}
+header a:hover{
+    color: #36A900;
+}
+
+
+
+#menu_home, #menu_about, #menu_services, #menu_contac  {
+    display: none;
+    width: 100%;
+    background: rgba(253, 253, 253, 0.2);
+}
+
+@media only screen and (min-width: 768px){
+    #menu_cont{
+        width: 40%;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    hr{
+        display: none;
+    }
+    #menu_cont{
+        display: block;
+        align-items: center;
+        background: none;
+        box-shadow: none;
+        width: 100%;
+        height: 0px;
+        overflow-x: visible;
+        margin-top: auto;
+    }
+    #menu_cont.remove{
+        display: block;
+    }
+    #cont-disparador, #cont-close{
+        display: none;
+    }
+    .interior{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 95px;
+    }
+
+    #menu_home, #menu_about, #menu_services, #menu_contac  {
+        background-color: #012a41;
+        box-shadow: 0px 5px 16px rgba(11,3,43,0.3);
+        color: aliceblue;
+        position: absolute;
+        z-index: 2;
+        top: 45px;
+    }
+    #menu_home{
+        width: 200px;
+        left: 15px;
+    }
+    #menu_about{
+        width: 200px;
+        left: 15px;
+    }
+    #menu_services{
+        width: 230px;
+        left: 15px;
+    }
+    #menu_contac{
+        width: 190px;
+        left: 15px;
+    }
+       
+    header li{
+        padding: 15px;
+        margin: 0px;
+    }  
+}
+.slider{
+    overflow: hidden;
+    padding-top: 100px;
+}    
+.slider--inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+    align-items: center;
+
+}
+.slider--inner img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+img {
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+}
